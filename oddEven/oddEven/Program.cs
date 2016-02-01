@@ -17,7 +17,7 @@ namespace add
             n1 = Int32.Parse(Console.ReadLine());
             Console.WriteLine("Enter the N2 :");
             n2 = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the pattern : ");
+            Console.WriteLine("Enter the operation : ");
             string name = Console.ReadLine();
             if (name=="add")
             {
@@ -36,8 +36,10 @@ namespace add
                 Console.ReadLine();
             }
             else if(name=="divide")
-            { r1 = n1 / n2;
-                Console.WriteLine("Result : " + r1);
+            { r1  = n1 / n2;
+                
+               
+                Console.WriteLine("Result : " + r1 );
                 Console.ReadLine();
             }
                 

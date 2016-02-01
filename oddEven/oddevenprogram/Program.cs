@@ -21,17 +21,20 @@ namespace oddevenprogram
             string name=Console.ReadLine();
             if (name=="odd")
             {
-                for (f1 = 0; f1 < s2; f1++)
+                int i;
+                for (i=f1; f1 <= s2; f1++)
                 {
                     if (f1 % 2 > 0)
                     
                         Console.WriteLine(f1);
                     
                 }
-            }
+            } 
             else if (name=="even")
             {
-                for (f1 = 0; f1 < s2; f1++)
+                int i;
+
+                for (i=f1; f1 <=  s2; f1++)
                 {
                     if (f1 % 2 == 0)
 
