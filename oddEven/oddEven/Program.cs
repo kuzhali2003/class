@@ -36,10 +36,13 @@ namespace add
                 Console.ReadLine();
             }
             else if(name=="divide")
-            { r1  = n1 / n2;
+            { 
+                   
+                              
                 
+               double r2 = (double)n1 / n2;                
                
-                Console.WriteLine("Result : " + r1 );
+                Console.WriteLine("Result : " + r2);
                 Console.ReadLine();
             }
                 
