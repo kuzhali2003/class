@@ -10,10 +10,10 @@ namespace program4homeworkclass3
     {
         static void Main(string[] args)
         {
-            string result = " ";
+            string result = "";
             while (true)
             {
-                Console.Write("Enter your input here : ");
+                Console.Write(" Please enter your input here : ");
                 var input = (Console.ReadLine());
                 Console.Write("Do you want to continue Y/N ? ");
                 var decision = Console.ReadLine().ToUpper() == "Y";

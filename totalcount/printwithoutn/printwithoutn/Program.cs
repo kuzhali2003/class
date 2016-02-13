@@ -17,7 +17,7 @@ namespace printwithoutn
             for (int i=1; true; i++)
                 
             {
-                Console.WriteLine(i);
+                Console.Write(i+ " ");
                 if (i==n )
                     break;
         }

@@ -17,8 +17,10 @@ namespace program5homework
                 input = Console.ReadLine();
                 if (input == "Q")
 
-                { Console.WriteLine("Thank you.Bye Bye! ");
-                break; }
+                {
+                    Console.WriteLine("Thank you.Bye Bye! ");
+                    break;
+                }
                 else
                 {
                     int num;
@@ -26,7 +28,7 @@ namespace program5homework
 
 
 
-                    if (num % 30 == 0 && num % 15 == 0 && num % 3 == 0)
+                    if (num % 30 == 0)
 
                         Console.WriteLine(num + " is a multiple of 30 , 15, 3 ");
 
@@ -41,11 +43,11 @@ namespace program5homework
                         (num % 3 == 0)
                         Console.WriteLine(num + " is a multiple of 3 ");
 
-                    else if
-                    (num % 3 > 0 && num % 15 > 0 && num % 30 > 0)
-                        Console.WriteLine(num + " is not a multiple of 3, 15, 30 ");
+                    else
 
+                        Console.WriteLine(num + " is not a multiple of 3, 15, 30 ");
                 }
+                
             }       
           }
         }

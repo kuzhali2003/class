@@ -14,13 +14,14 @@ namespace qexit
 
             for (int i = 1; true; i++)
             {
-                
-                string input;
+
+
                 Console.Write("Enter the Number : ");
-                  input = Console.ReadLine();
-                if(input == "Q")
-                    
+                string input = Console.ReadLine().ToUpper();
+                if (input == "Q")
+                { 
                     Console.WriteLine("Thank you.Bye Bye! ");
+                break; }
                 else
                 {
                     int num = Convert.ToInt32(input); 

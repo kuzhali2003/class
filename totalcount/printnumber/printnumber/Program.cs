@@ -10,12 +10,12 @@ namespace printnumber
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter the Number to exit : ");
+            Console.Write("Please Enter a Number to exit : ");
             int n = Int32.Parse(Console.ReadLine());
             int i = 1;
             while(i<=n)
             {
-                Console.WriteLine(i);
+                Console.Write(i+ " " );
                 i = i + 1;
 
             }
