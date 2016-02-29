@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Solution_1
 {
-     class program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -15,28 +15,21 @@ namespace Solution_1
                 Console.WriteLine("Please enter an Option: Circle/Square/Rectangle/Triangle/Quit : ");
                 string option = Console.ReadLine().ToLower();
 
-
-
-
                 if (option == "circle")
                 {
                     Circle objcircle1 = new Circle();
                     objcircle1.FindArea();
-
                 }
 
                 else if (option == "square")
                 {
                     Square objsquare = new Square();
                     objsquare.FindAreaS();
-
-
                 }
                 else if (option == "rectangle")
                 {
                     Rectangle objrect = new Rectangle();
                     objrect.FindAreaR();
-
 
                 }
                 else if (option == "triangle")
@@ -44,7 +37,6 @@ namespace Solution_1
 
                     Triangle objtri = new Triangle();
                     objtri.FindAreaT();
-
                 }
                 else if (option == "quit")
 
