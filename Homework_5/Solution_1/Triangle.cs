@@ -14,19 +14,19 @@ namespace Solution_1
 
         {
             Console.Write("Please enter the base: ");
-            baseb = Int32.Parse(Console.ReadLine());
+            baseb = UserInput.AcceptNumberInput();
             Console.Write("Please enter the height: ");
-            height = Int32.Parse(Console.ReadLine());
+            height = UserInput.AcceptNumberInput();
         }
 
-        public int baseb { get; set; }
-        public int height { get; set; }
+        private double baseb { get; set; }
+        private double height { get; set; }
 
         public void FindAreaT()
         {
 
             double areaT= .5 * baseb * height;
-            Console.WriteLine("Area of the circle = " + areaT);
+            Console.WriteLine("Area of the Triangle = " + areaT);
         }
 
 
