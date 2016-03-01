@@ -41,6 +41,9 @@ namespace Solution_1
                 else if (option == "quit")
 
                     Console.WriteLine("Thankyou! Bye Bye !");
+                else if ((option!="circle")||(option!="rectangle")||(option!="square")||(option!="triangle")||(option!="quit"))
+
+                    Console.WriteLine("Enter a valid input: ");
 
 
             }
