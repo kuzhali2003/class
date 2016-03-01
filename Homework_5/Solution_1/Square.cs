@@ -11,13 +11,14 @@ namespace Solution_1
         public Square()
         {
             Console.Write("Please enter the side: ");
-            sides = Int32.Parse(Console.ReadLine());
+            side = UserInput.AcceptNumberInput();
+
         }
-        public int sides { get; set; }
+        private double side { get; set; }
 
         public void FindAreaS()
         {
-            double areaa = sides * sides;
+            double areaa = side * side;
             Console.WriteLine("Area of the square = " + areaa);
         }
 
