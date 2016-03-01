@@ -11,13 +11,13 @@ namespace Solution_1
         public Rectangle()
         {
             Console.Write("Please Enter the length: ");
-            length = Int32.Parse(Console.ReadLine());
+            length = UserInput.AcceptNumberInput();
             Console.Write("Please enter the width: ");
-            width = Int32.Parse(Console.ReadLine());
+            width = UserInput.AcceptNumberInput();
 
         }
-        public int length { set; get; }
-        public int width { get; set; }
+        private double length { set; get; }
+        private double width { get; set; }
         public void FindAreaR()
         {
             double arear = length * width;
