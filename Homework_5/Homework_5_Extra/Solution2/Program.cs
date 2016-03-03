@@ -12,35 +12,27 @@ namespace Solution2
         {
             Console.Write("Please enter the type of shape (Circle/Square/Quit): ");
             string shape = Console.ReadLine().ToUpper();
-            Console.Write("Type of value being entered (Dimension/Area): ");
-            string type = Console.ReadLine().ToUpper();
-            while (shape == "SQUARE")
-            {
-                if ((shape == "SQUARE") && (type == "DIMENSION"))
 
+            while (true)
+            {
+                if (shape == "SQUARE")
                 {
                     Square objsquare = new Square();
-                    objsquare.FindArea();
+                    break;
                 }
-
+                else if (shape == "CIRCLE")
+                {
+                    Circle objcircle = new Circle();
+                    break;
+                }
+                else if (shape == "QUIT")
+                {
+                    Console.WriteLine("Bye Bye");
+                    break;
+                }
                 else
-                {
-                    Area objsquare1 = new Area();
-                    objsquare1.FindSide();
-                }
-                while (shape == "CIRCLE")
-                {
-                    if ((shape == "CIRCLE") && (type == "DIMENSION"))
-                    {
-                        Circle objcircle = new Circle();
-                        objcircle.FindArea();
-                    }
-                    else
-                    {
-                        CircleArea objcir = new CircleArea();
-                        objcir.FindRadius();
-                    }
-                }
+                    Console.WriteLine("Please enter valid input: ");
+
             }
         }
     }
