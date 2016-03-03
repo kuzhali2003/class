@@ -13,7 +13,7 @@ namespace Solution2
         public Circle()
         {
             Console.Write("Type of value being entered (Dimension/Area): ");
-            string type = Console.ReadLine().ToUpper();
+             type = Console.ReadLine().ToUpper();
             if (type == "DIMENSION")
             {
                 Console.Write("Please enter the radius of the Circle: ");
