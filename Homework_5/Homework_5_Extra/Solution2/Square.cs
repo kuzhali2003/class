@@ -8,7 +8,8 @@ namespace Solution2
 {
     class Square
     {
-        private double side, area;
+       // public double area ;
+        private readonly string type;
         public Square()
         {
             Console.Write("Type of value being entered (Dimension/Area): ");
@@ -16,31 +17,31 @@ namespace Solution2
             if (type == "DIMENSION")
             {
                 Console.Write("Please enter the length of the side of the Square:");
-                Side = UserInput.AcceptNumberInput();
-                FindArea();
+                Sideofsquare = UserInput.AcceptNumberInput();
             }
-            else if(type=="AREA")
+            else if (type == "AREA")
             {
                 Console.Write("Please enter the area of  Square:");
                 area = UserInput.AcceptNumberInput();
-                FindSide();
             }
             else
                 Console.WriteLine("Please enter valid input: ");
         }
-        
-        public void FindSide()
+        public double Sideofsquare { get; set; }
+          
+        public double area { get; set; } 
+        public void FindSideOrDimension()
         {
-            double squareroot = Math.Round(Math.Sqrt(area));
-            Console.WriteLine("Side of the Square: " + squareroot);
-        }
-
-         public  double Side{ get; set; }
-        
-        public void FindArea()
-        {
-            double area = Side * Side;
-            Console.WriteLine("Area of the square = " + area);
+            if (type == "AREA")
+            {
+                double squareroot = Math.Round(Math.Sqrt(area));
+                Console.WriteLine("Side of the Square: " + squareroot);
+            }
+            else
+            { 
+               double Area = Sideofsquare * Sideofsquare;
+               Console.WriteLine("Area of the square = " + Area);
+            }
         }
 
     }

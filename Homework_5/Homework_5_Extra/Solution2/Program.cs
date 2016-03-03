@@ -18,11 +18,13 @@ namespace Solution2
                 if (shape == "SQUARE")
                 {
                     Square objsquare = new Square();
+                    objsquare.FindSideOrDimension();
                     break;
                 }
                 else if (shape == "CIRCLE")
                 {
                     Circle objcircle = new Circle();
+                    objcircle.FindAreaOrDimension();
                     break;
                 }
                 else if (shape == "QUIT")
