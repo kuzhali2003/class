@@ -12,31 +12,27 @@ namespace Solution2
         private readonly string type;
         public Circle()
         {
-            Console.Write("Type of value being entered (Dimension/Area): ");
-            type = Console.ReadLine().ToUpper();
             while (true)
             {
+                Console.Write("Type of value being entered (Dimension/Area): ");
+                type = Console.ReadLine().ToUpper();
+
                 if (type == "DIMENSION")
                 {
                     Console.Write("Please enter the radius of the Circle: ");
                     radius = UserInput.AcceptNumberInput();
-                    break;
                 }
                 else if (type == "AREA")
                 {
                     Console.Write("Please enter the area of Circle: ");
                     area = UserInput.AcceptNumberInput();
-                    break;
                 }
                 else
                     Console.WriteLine("Enter a valid input");
-                break;
             }
         }
         public void FindAreaOrDimension()
         {
-
-
             if (type == "DIMENSION")
             {
                 double area = Math.PI * (radius * radius);
