@@ -34,7 +34,7 @@ namespace Solution2
                 }
                 else
                     Console.WriteLine("Please enter valid input: ");
-
+                break;
             }
         }
     }

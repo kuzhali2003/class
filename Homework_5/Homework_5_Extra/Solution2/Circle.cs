@@ -13,22 +13,30 @@ namespace Solution2
         public Circle()
         {
             Console.Write("Type of value being entered (Dimension/Area): ");
-             type = Console.ReadLine().ToUpper();
-            if (type == "DIMENSION")
+            type = Console.ReadLine().ToUpper();
+            while (true)
             {
-                Console.Write("Please enter the radius of the Circle: ");
-                radius = UserInput.AcceptNumberInput();
+                if (type == "DIMENSION")
+                {
+                    Console.Write("Please enter the radius of the Circle: ");
+                    radius = UserInput.AcceptNumberInput();
+                    break;
+                }
+                else if (type == "AREA")
+                {
+                    Console.Write("Please enter the area of Circle: ");
+                    area = UserInput.AcceptNumberInput();
+                    break;
+                }
+                else
+                    Console.WriteLine("Enter a valid input");
+                break;
             }
-            else if (type == "AREA")
-            {
-                Console.Write("Please enter the area of Circle: ");
-                area = UserInput.AcceptNumberInput();
-            }
-            else
-                Console.WriteLine("Enter a valid input");
         }
         public void FindAreaOrDimension()
         {
+
+
             if (type == "DIMENSION")
             {
                 double area = Math.PI * (radius * radius);
@@ -41,4 +49,5 @@ namespace Solution2
             }
         }
     }
+
 }
