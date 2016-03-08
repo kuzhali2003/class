@@ -10,28 +10,33 @@ namespace Solution_3
     {
 
 
-        public LoginService()
+        //  public LoginService()
+        // {
+        //    Console.Write("Please enter an action(Login/Logoff/Quit): ");
+        //   string entry = Console.ReadLine().ToLower();
+
+        //  }
+        public bool Isloggedin { get; set; } =login;
+
+        public void Login()
         {
+            
             Console.Write("Please enter an action(Login/Logoff/Quit): ");
-            string entry = Console.ReadLine().ToLower();
+           string input= Console.ReadLine().ToUpper();
 
-        }
-
-    public void Login()
-        {
-            bool entry = true;
-            if (entry)
+            bool Isloggegin =Convert.ToBoolean( input);
+          
+            if (Isloggedin)
 
 
                 Console.WriteLine("Hi. You are now logged in to the student network");
 
-
             else
-                Console.WriteLine("Thanks.Youare now logged out !");
+                          Console.WriteLine("Thanks.Youare now logged out !");
 
         }
-    
-}
+
+    }
 }
          
             
